@@ -54,6 +54,7 @@
               <span class="form__span">ou use sua conta de e-mail</span>
               <input class="form__input" type="text" placeholder="Email" name="email" id="email_login" maxlength="50" required="" />
               <input class="form__input" type="password" placeholder="Senha"  name="senha" id="senha_login" minlength="4" maxlength="12" required=""/> 
+              <div th:if="${erro}" style="color: red;"><p th:text="${erro}"></p></div>
               <a class="form__link" href="/alterarSenha">Esqueceu sua senha?</a>
               <button class="form__button switch__button button" type="submit">
                 ENTRAR
