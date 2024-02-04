@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RecodeViagensApplication<RecodeViagens>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.org.com.recode.RecodeViagensApplication",
+            "projectName": "RecodeViagens",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
