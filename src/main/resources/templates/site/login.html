@@ -30,7 +30,7 @@
               <input class="form__input" type="tel" placeholder="CPF:" name="cpf" id="cpf"  maxlength="14" required/>
               <input class="form__input" type="email" placeholder="Email:" name="email" id="email" maxlength="50"  required/>
               <input class="form__input" type="password" placeholder="Senha:" name="senha" id="senha" minlength="4"  maxlength="12"  required />
-              <div class="alert alert-danger text-center mt-3" role="alert" th:if="${msg} != null" th:text="${msg}"></div>
+              <div th:if="${msg} != null" style="color: red;"><p th:text="${msg}"></p></div>
               <button class="form__button switch__button button" type="submit">INSCREVA-SE</button>
               <a class="form__button switch__button button" href="/">VOLTAR</a>
             </form>
