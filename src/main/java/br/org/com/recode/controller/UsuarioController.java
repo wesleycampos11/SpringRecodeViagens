@@ -58,8 +58,8 @@ public class UsuarioController {
 		ModelAndView modelAndView = new	ModelAndView("success/confirm-cadastroUsuario");
 
 		// CRIPTOGRAFA SENHA
-		String senhaEncriptada = SenhaUtil.encode(usuario.getSenha());
-		String senhaCriptografada = SenhaUtil.encode(usuario.getSenha());
+		//String senhaEncriptada = SenhaUtil.encode(usuario.getSenha());
+		//String senhaCriptografada = SenhaUtil.encode(usuario.getSenha());
 			
 		// VERIFICAÇÃO PARA SABER SE O USUÁRIO JÁ TEM E-MAIL CADASTRADO
 		
@@ -77,7 +77,7 @@ public class UsuarioController {
 		}
 		
 		
-		usuario.setSenha(senhaCriptografada);
+		//usuario.setSenha(senhaCriptografada);
 		 
 		// CADASTRA NOVO USUÁRIO
 		usuarioRepository.save(usuario);
