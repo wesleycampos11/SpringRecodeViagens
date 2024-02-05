@@ -32,7 +32,7 @@ public class FaleConosco {
 	@Column(nullable = false, length = 20)
     private String assunto;
 	
-	@Column(nullable = false, length = 12)
+	@Column(nullable = false, length = 15)
     private String telefone;
 	
 	@Column(nullable = true, name = "dataContato")
